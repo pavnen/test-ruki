@@ -1,0 +1,49 @@
+.field {
+  background: linear-gradient(180deg, #310050 0%, #000000 100%);
+  height: calc(100vh - 40px);
+  width: 380px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.header {
+  font-size: 20px;
+  padding: 16px;
+  color: #fff;
+}
+
+.cells {
+  display: flex;
+  position: relative;
+  height: calc(100% - 124px);
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cells::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 26px;
+  height: 24px;
+  width: 328px;
+  background: linear-gradient(#310050, transparent);
+  opacity: 0.75;
+  z-index: 99;
+}
+
+.button {
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 36px;
+  background: #5a3472;
+  border: 1px solid #5a3472;
+  border-radius: 4px;
+  width: 332px;
+  color: #fff;
+  margin: 16px auto 0;
+}

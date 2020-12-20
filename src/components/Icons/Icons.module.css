@@ -1,0 +1,19 @@
+.icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  font-size: 20px;
+}
+
+.icon.scull {
+  background: linear-gradient(180deg, #0d658a 0%, #b0ffb4 100%);
+}
+
+.icon.fire {
+  background: linear-gradient(180deg, #ffb800 0%, #fff7b0 100%);
+}
+
+.icon.egg {
+  background: linear-gradient(180deg, #ad00ff 0%, #ffb0e9 100%);
+}

@@ -1,0 +1,32 @@
+.cell {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 2px 0;
+  width: 296px;
+  height: 40px;
+  font-family: Roboto;
+  text-align: center;
+  color: #000;
+}
+
+.caption {
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  text-align: left;
+}
+
+.textWrapper {
+  margin-left: 16px;
+}
