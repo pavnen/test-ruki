@@ -10,7 +10,7 @@ function App() {
   const [aliveCount, setAliveCount] = useState<number>(0)
   const [deadCount, setDeadCount] = useState<number>(0)
 
-  const checkNewLife = useEffect(() => {
+  useEffect(() => {
     if (aliveCount === ALIVE_COUNT_TO_LIFE) {
       setCells([CellType.life, ...cells])
       setAliveCount(0)
@@ -18,7 +18,7 @@ function App() {
     }
   }, [aliveCount])
 
-  const checkDeath = useEffect(() => {
+  useEffect(() => {
     if (deadCount === DEAD_COUNT_TO_DEATH) {
       setCells([...cells.slice(0, DEAD_COUNT_TO_DEATH), ...cells.slice(DEAD_COUNT_TO_DEATH + 1)])
       setDeadCount(0)

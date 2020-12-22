@@ -28,7 +28,7 @@ export const Field: React.FC<FieldProps> = ({addNewCell, cells}) => {
   return (
     <div className={styles.field}>
       <div className={styles.header}>Kлеточное наполнение</div>
-      <div className={styles.cells}>{cells.slice().map(getCell)}</div>
+      <div className={styles.cells}>{cells.map(getCell)}</div>
       <button className={styles.button} onClick={addNewCell}>
         сотворить
       </button>
